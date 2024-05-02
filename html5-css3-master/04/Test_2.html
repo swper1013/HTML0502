@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 입력 양식을 이용해 간단한 회원가입 신청서 만들기</title>
+  <style>
+  ul{
+    list-style: none;
+    font-weight: bold;
+  }
+  #container { 
+        width:520px;
+        border:1px solid black;
+        padding:20px 40px;
+        margin:0 auto;
+        list-style-type: none;
+    }
+
+fieldset { margin-bottom:15px; }
+legend { font-weight:bold; }
+    li { 
+        line-height:30px;}
+    </style> 
+</head>
+<body>
+    <div id="container">
+    <form action="reg.php"method="post">
+        <ul>
+            <li><label for="f_name">First name:</label></li>
+            <input type="text" id="f_name" autofocus required>
+            <li><label for="L_name">Last name:</label></li>
+            <input type="text" id="L_name">
+            <li><label for="Email">Email:</label></li>
+            <input type="email" id="Email" autofocus placeholder="@gmail.com">
+            
+        </ul>
+        <ul>
+            
+           <li> <label class="reg">Gender :<input type="radio" name="gender" value="gen">Male,</label>
+            <label><input type="radio" name="gender" value="gen">Female</label></li>
+            
+        </ul>
+        <ul>
+            
+            <li><label class="reg">Favorite :</label><label><input type="checkbox" name="Favorite1" value="HT">HTML,</label>
+                <label><input type="checkbox" name="Favorite2" value="JA">Java,</label>
+                <label><input type="checkbox" name="Favorite3" value="PH">PHP</label></li>
+             
+         </ul>
+         <ul>
+            <li><label class="reg" for="UN">University</label>
+            <select id="UN">
+                <option value="Ga">Gachon University</option>
+            </select>
+        </li>
+
+         </ul>
+         <ul>
+            <li>
+                <label class="reg">Color : <input type="color" value="black"></label>
+
+                </label>            </li>
+         </ul>
+         <ul>
+            <li><label class="reg">Date :<input type="date"id="new" style="margin-left: 13px;"></label></li>
+         </ul>
+         <input type="submit" value="Registration" style="margin-left: 34px;" >
+        </div>
+      
+    </form>
+    
+</body>
+</html>

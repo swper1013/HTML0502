@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           background-color:#fff; 
+        }
+         ul li{
+           list-style:none; 
+           margin: 15px 0;	
+           font-size:14px;	
+        }
+        </style>
+</head>
+<body>
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+    <input type="number" name="num1" value="0">+
+    <input type="number" name="num2" value="0">=
+    <output name="result" for="num"></output>
+
+</form>
+<hr>
+<form>
+    <ul>
+        <li>
+            <label>10초 남았습니다.</label>
+            <progress value="50" max="60"><!--60중 50만큼 진행-->
+
+            </progress>
+        </li>
+        <li>
+            <label>현재 진행률 30%</label><!--100중 30만큼진행-->
+            <progress value="30" max="100"></progress>
+        </li>
+    </ul>
+</form>
+    
+</body>
+</html>

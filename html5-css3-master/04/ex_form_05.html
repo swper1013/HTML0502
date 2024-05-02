@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+			 list-style:none;/*점 제거*/
+		 }
+		 li {
+			 margin:10px;/*li 간 간격*/
+		 }
+		 li label {
+			 width:120px;
+			float:left;
+			text-align:right;
+			padding-right:8px;/*라벨과 input사이*/
+		 }
+         input[type="submit"] {
+			 text-align:center;
+			 width:100%;
+			 height:30px;
+			 margin-top:15px;
+		 }
+         
+
+          </style>
+</head>
+<body>
+    <h1>회원 가입</h1>
+    <form>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>
+                    <label for="user_id">아이디</label>
+                    <input type="text" id="user-id">
+                </li>
+                <li>
+                    <label for="user_pw">비밀번호</label>
+                    <input type="password" id="user_pw">
+                </li>
+                <li>
+                    <label for="check_pw">비밀번호 확인</label>
+                    <input type="password" id="check_pw">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="user_name">이름</label>
+                    <input type="text" id="user_name">
+                </li>
+                <li>
+                    <label for="user_email">메일 주소</label>
+                    <input type="email" id="user_email">
+                </li>
+                <li>
+                    <label for="Phone">연락처</label>
+                    <input type="text" id="Phone">
+                </li>
+                <li>
+                    <label for="URL">블로그/홈페이지</label>
+                    <input type="url" id="URL">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <input type="submit" value="가입하기">
+    
+</body>
+</html>

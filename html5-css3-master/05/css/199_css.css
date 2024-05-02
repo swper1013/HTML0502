@@ -1,0 +1,32 @@
+#main{
+    width: 600px;
+    border: 2px dotted;
+    padding: 15px;
+    line-height: 30px;
+    
+}
+.sub{
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+
+}
+.bluetext{
+    color: blue;
+}
+.bugun{
+    color: #760c0c;
+    font-weight: bold;
+}
+p{
+    margin-top:20px;
+    text-align: center;
+
+}
+h1, h2{
+    text-align: center;
+    
+}
+h1:hover{
+    text-align: left;
+}

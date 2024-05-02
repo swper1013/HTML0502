@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여름방학특강</title>
+    <style>
+           body {
+            background-color:#fff; 
+          }
+          form fieldset{
+            margin-bottom:25px; 
+          }
+          form legend{
+            font-size:15px;
+            font-weight:600; 
+          }
+         .reg {
+            font-size:14px;
+            width:110px;
+            color:#390;
+            font-weight:bold;      
+            float:left;
+            text-align:right;
+            margin-right:15px;
+          }    
+          form ul li{
+            list-style:none; 
+            margin: 15px;   
+            font-size:14px;   
+                
+          }
+             input[type="submit"]
+             {
+                width: 100%;
+                text-align:center;
+                font-weight: bold;
+             }
+    </style>
+</head>
+<body>
+    <h2>여름방학 특강 신청</h2>
+    <form>
+        <fieldset>
+            <legend>수강과목</legend>
+<ul>
+<li>
+            <label class="reg" for="eng">영어 회화(초급)</label>
+            <input type="text" id="eng" value="오전 9:00~11:00" >
+</li>
+</ul>
+        </fieldset>
+        <fieldset>
+            <legend>신청자</legend>
+            <ul>
+                <li><label class="reg" for="uname">이름</label>
+            <input type="text" id="uname" autofocus required><!--필수작성-->
+        </li>
+        <li>
+            <label class="reg" for="sch_name">학번</label>
+            <input type="text" id="sch_name" placeholder="하이픈없이 입력" >
+        </li>
+        <li>
+            <label class="reg" for="hak">학과</label>
+            <input type="text" id="hak" autofocus required>
+        </li>
+        </ul>
+        </fieldset>
+        <input type="submit" value="제출">
+
+    </form>
+    
+</body>
+</html>

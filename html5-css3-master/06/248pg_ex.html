@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록스타일</title>
+    <style>
+        #main {
+            width: 300px;
+            height: auto;
+            border: 1px dotted;
+            margin-left: 15px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            line-height: 25px;
+        }
+
+        .chan {
+            list-style-type: none;
+        }
+
+        .small2 {
+            list-style-type: lower-alpha;
+        }
+
+        .rom {
+            list-style-type: upper-roman;
+        }
+
+        .im {
+            list-style-image: url('images/dot.png');
+        }
+        .inlist{
+            list-style-position:inside;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>이지스퍼블리싱</h1>
+        <ul>
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>질문답변</li>
+            <li>동영상강의</li>
+        </ul>
+        <ul class="chan">
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>질문답변</li>
+            <li>동영상강의</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="main">
+        <h1>도서시리즈</h1>
+        <ol class="small2">
+            <li>Do it! 시리즈</li>
+            <li>된다 시리즈</li>
+            <li>DCM 프로 사진가</li>
+            <li>데이터과학 시리즈</li>
+        </ol>
+        <ol class="rom">
+            <li>Do it! 시리즈</li>
+            <li>된다 시리즈</li>
+            <li>DCM 프로 사진가</li>
+            <li>데이터과학 시리즈</li>
+        </ol>
+
+    </div>
+    <hr>
+    <div id="main">
+
+        <h1>이지스퍼블리싱</h1>
+        <ul class="im">
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>질문답변</li>
+            <li>동영상강의</li>
+        </ul>
+
+    </div>
+    <hr>
+    <div id="main">
+        <h2>List-style-position을 지정하지 않음</h2>
+        <ul>
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>질문답변</li>
+            <li>동영상강의</li>
+
+        </ul>
+        <ul class="inlist">
+            <h2>list-style-position : inside</h2>
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>질문답변</li>
+            <li>동영상강의</li>
+
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
